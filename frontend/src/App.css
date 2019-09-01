@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.header_container .header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_container .header_logo a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #4fbbdb;
+}
+
+.header_container .header_logo form input {
+    width: 300px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+.header_container .header_info {
+    display: flex;
+    align-items: center;
+}
+
+.header_container .header_info a {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 10px;
+    color: #4fbbdb;
+    border: 1px solid #4fbbdb;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.header_container .header_info button {
+    font-size: 12px;
+    margin: 10px;
+    color: white;
+    border: 1px solid #4fbbdb;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #4fbbdb;
+    cursor: pointer;
+    outline: none;
+}
+
+.header_container .header_login a {
+    font-size: 12px;
+    margin: 10px;
+    color: white;
+    border: 1px solid #4fbbdb;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #4fbbdb;
+    text-decoration: none;
+}
+
+
+
+.login_container {
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.login_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login_container form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+}
+
+.login_container form input:focus {
+    border: 1px solid #4fbbdb;
+}
+
+
+.login_container form button {
+    border: 1px solid #4fbbdb;
+    padding: 5px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #4fbbdb;
+}
+
+.login_container a {
+    font-size: 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+
+.register_container {
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.register_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.register_container form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+}
+
+.register_container form input:focus {
+    border: 1px solid #4fbbdb;
+}
+
+
+.register_container form button {
+    border: 1px solid #4fbbdb;
+    padding: 5px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #4fbbdb;
+}
+
+.home_container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.neworder_container {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+
+.neworder_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.neworder_container form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+.neworder_container form textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+
+.neworder_container form button {
+    border: 1px solid #4fbbdb;
+    padding: 5px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #4fbbdb;
+}
+
+
+.order_item {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #fafafa;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.order_item .order_title {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4fbbdb;
+    font-weight: 500;
+}
+
+.order_item .order_description {
+    font-size: 12px;
+    color: grey;
+    margin: 5px 0;
+}
+
+.order_item .order_reward {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.order_item .order_reward img {
+    margin-right: 10px;
+}
+
+.order_item .order_reward span {
+    font-size: 12px;
+    color: grey;
+}
+
+.order_item .order_location {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.order_item .order_location img {
+    margin-right: 10px;
+}
+
+.order_item .order_location span {
+    font-size: 12px;
+    color: grey;
+}
+
+.order_item .order_contact {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.order_item .order_contact img {
+    margin-right: 10px;
+}
+
+.order_item .order_contact span {
+    font-size: 12px;
+    color: grey;
+}
+
+
+.detail_container {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.detail_container .detail_item {
+    text-align: center;
+}
+
+.detail_container .detail_item .detail_info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content:center;
+}
+
+.detail_container .detail_item .detail_info img {
+    margin: 10px;
+}
+
+.detail_container .detail_item .detail_info span {
+    font-size: 12px;
+    color: grey;
+}
+
+.profile_container {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.btn_delete {
+    border: 2px solid red;
+    padding: 5px 20px;
+    color: red;
+    background-color: white;
+    border-radius: 2px;
+    outline: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.update_container {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+
+.update_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.update_container form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+.update_container form textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+
+.update_container form button {
+    border: 1px solid #4fbbdb;
+    padding: 5px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #4fbbdb;
+}
+
+.btn_edit {
+    border: 2px solid #4fbbdb;
+    padding: 5px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+    font-weight: normal;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #4fbbdb;
+    margin-left: 10px;
+    text-decoration: none;
+}
