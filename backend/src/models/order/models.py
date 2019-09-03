@@ -7,7 +7,7 @@ User = get_user_model()
 class Order(models.Model):
 
     owner       = models.ForeignKey(User, on_delete=models.CASCADE)
-    title       = models.CharField(max_length=255, blank=False)
+    title       = models.CharField(max_length=255, blank=False, db_index=True)
     description = models.TextField(blank=True)
     reward      = models.CharField(max_length=255, blank=True)
     city        = models.CharField(max_length=255, blank=False)
